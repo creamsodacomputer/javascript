@@ -59,17 +59,23 @@
 //    eg: let firstName = 'soda';
 //        let age = 26;
 // There are 7 PRIMITIVE DATA TYPES
-// 1. number: floating point numbers (decimals & integers)
-// 2. string: sequence of characters, always put in '' & ""
-// 3. boolean: logival type, true or false, for decisions
+// 1*. number: floating point numbers (decimals & integers)
+// 2*. string:sequence of characters, always put in '' & ""
+// 3*. boolean: logival type, true or false, for decisions
 // 4. undefined: value of a variable not yet defined 'empty value'
 // 5. null: also 'empty value', used in diff circumstances
 // 6. symbol: introduced in ES6, unique and can't be changed?
 // 7. bigint: integers that are too large to be represented by the number type
 // DYNAMIC TYPING
 // you don't have to manually define the type the variable contains.
-// js automatically detects the type.
-// 
+// js automatically detects the type. you don't have to manually define it.
+// the value has a type, NOT THE VARIABLE.
+
+// C O D E    C O M M E N T I N G
+// - used to mention what a section of code does
+// - a section of code that you don't want to use
+// - multiline /* insert code here */
+
 
 
 let js = 'amazing';
@@ -101,3 +107,35 @@ let job1 = "coder";
 let job2 = "designer";
 
 console.log(myFirstJob);
+
+true; //automatically a boolean value
+console.log(true); // not a string
+let javascriptIsFun = true;
+console.log(javascriptIsFun);
+// value holds the data type and not the variable
+
+// T Y P E    O P E R A T O R
+console.log(typeof true);
+console.log(typeof javascriptIsFun);
+console.log(typeof 26);
+console.log(typeof 'soda');
+// always need quaotes to create a string "" or ''
+
+// D Y N A M I C    T Y P I N G
+javascriptIsFun = 'YES!' // don't write 'let' again
+// just assign a new value
+console.log(typeof javascriptIsFun);
+
+let year; //declaration of an empty variable
+console.log(year); // undefined = empty value
+console.log(typeof year);
+
+year = 1991;
+console.log(year);
+console.log(typeof year);
+
+// TYPEOF ERROR
+console.log(typeof null); // it says it is an object
+// doesn't make any sense at all, considered as a bug
+// never corrected for legacy reasons
+// null is not an object though
